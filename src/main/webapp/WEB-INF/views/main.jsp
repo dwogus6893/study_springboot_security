@@ -21,7 +21,6 @@
         <div>
             <a href="/loginForm">Login</a>
         </div>
-
         <div>
             <a href="/joinForm">Join Form</a>
         </div>

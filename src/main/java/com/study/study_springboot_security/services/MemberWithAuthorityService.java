@@ -1,12 +1,14 @@
 package com.study.study_springboot_security.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import com.study.study_springboot_security.daos.SharedDao;
 import com.study.study_springboot_security.utils.CommonUtils;
 import java.util.Map;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
 
+@Service
 public class MemberWithAuthorityService {
 
     @Autowired
