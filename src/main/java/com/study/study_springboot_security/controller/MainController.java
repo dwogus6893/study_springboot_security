@@ -14,9 +14,9 @@ public class MainController {
 
         String username = null;
         if (principal instanceof UserDetails) {
-            username = ((UserDetails)principal).getUsername();   // 로그인 상태 확인
+            username = ((UserDetails)principal).getUsername();// 로그인 상태 확인
         } else {
-            username = principal.toString();     // 로그 아웃 상태 확인
+            username = principal.toString();// 로그 아웃 상태 확인
         }
 
         String viewName = "/WEB-INF/views/main.jsp";
