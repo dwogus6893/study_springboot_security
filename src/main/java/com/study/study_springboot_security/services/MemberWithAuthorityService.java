@@ -17,6 +17,8 @@ public class MemberWithAuthorityService {
     public Object insert(Object dataMap){
         String sqlMapId = "Memberwithauthority.insertWithUID";
         ((Map)dataMap).put("USERS_UID",commonUtils.getUniqueSequence());
+        ((Map)dataMap).put("role","ROLE_USER");
+        
         Object result = sharedDao.insert(sqlMapId, dataMap);
         return result;
     }
