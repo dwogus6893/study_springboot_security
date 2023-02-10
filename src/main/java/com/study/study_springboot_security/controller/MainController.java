@@ -24,10 +24,19 @@ public class MainController {
         return modelAndView;
     }
     
-    @GetMapping({"/admin"})     // 관리자 접속하는 곳
+    @GetMapping({"/admin/*"})     // ROLE_ADMIN
     public ModelAndView admin(ModelAndView modelAndView){
         String viewName = "/WEB-INF/views/admin.jsp";
         modelAndView.setViewName(viewName);
         return modelAndView;
     }
+
+      
+    @GetMapping({"/manager/*"})     // 관리자 접속하는 곳
+    public ModelAndView manager(ModelAndView modelAndView){
+        String viewName = "/WEB-INF/views/admin.jsp";
+        modelAndView.setViewName(viewName);
+        return modelAndView;
+    }
 }
+
