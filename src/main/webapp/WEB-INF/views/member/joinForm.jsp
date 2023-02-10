@@ -25,14 +25,14 @@
                 <label for="password" class="sr-only">password ID</label>
                 <input type="text" id="password" name="password" class="form-control" placeholder="password" required=""
                     autofocus="" value="1234">
-            </p>
+              </p>
 
 
-            <p>
-                <label for="NAME" class="sr-only">NAME</label>
-                <input type="NAME" id="NAME" name="NAME" class="form-control" placeholder="NAME"
-                    required="" value="test_first">
-            </p>
+                <p>
+                    <label for="NAME" class="sr-only">NAME</label>
+                    <input type="NAME" id="NAME" name="NAME" class="form-control" placeholder="NAME"
+                        required="" value="test_first">
+                </p>
             <p>
                 <label for="phone" class="sr-only">phone</label>
                 <input type="phone" id="phone" name="phone" class="form-control" placeholder="phone"
