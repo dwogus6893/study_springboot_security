@@ -23,7 +23,7 @@ public class SecurityConfiguration {
         httpSecurity.formLogin().loginPage("/loginForm")
             .loginProcessingUrl("/login")
             .defaultSuccessUrl("/");
-
+            
         return httpSecurity.build();
     }
 
