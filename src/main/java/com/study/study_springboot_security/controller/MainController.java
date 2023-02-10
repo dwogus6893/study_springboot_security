@@ -14,9 +14,9 @@ public class MainController {
 
         String username = null;
         if (principal instanceof UserDetails) {
-            username = ((UserDetails)principal).getUsername();// 로그인 상태 확인
+            username = ((UserDetails)principal).getUsername();   // 로그인 상태 확인
         } else {
-            username = principal.toString();// 로그 아웃 상태 확인
+            username = principal.toString();     // 로그 아웃 상태 확인
         }
 
         String viewName = "/WEB-INF/views/main.jsp";
@@ -24,19 +24,10 @@ public class MainController {
         return modelAndView;
     }
     
-    @GetMapping({"/admin/*"})     // ROLE_ADMIN
+    @GetMapping({"/admin"})     // 관리자 접속하는 곳
     public ModelAndView admin(ModelAndView modelAndView){
         String viewName = "/WEB-INF/views/admin.jsp";
         modelAndView.setViewName(viewName);
         return modelAndView;
     }
-
-      
-    @GetMapping({"/manager/*"})     // 관리자 접속하는 곳
-    public ModelAndView manager(ModelAndView modelAndView){
-        String viewName = "/WEB-INF/views/admin.jsp";
-        modelAndView.setViewName(viewName);
-        return modelAndView;
-    }
 }
-

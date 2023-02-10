@@ -21,9 +21,10 @@ public class SecurityConfiguration {
         
         // 로그인에 대한 부분
         httpSecurity.formLogin().loginPage("/loginForm")
+            .failureUrl("/loginForm?fail=true")
             .loginProcessingUrl("/login")
             .defaultSuccessUrl("/");
-            
+
         return httpSecurity.build();
     }
 
